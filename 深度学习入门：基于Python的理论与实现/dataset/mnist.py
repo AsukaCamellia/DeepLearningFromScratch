@@ -19,7 +19,7 @@ key_file = {
 }
 
 dataset_dir = os.path.dirname(os.path.abspath(__file__))
-save_file = dataset_dir + "/mnist.pkl"
+save_file = os.path.join(dataset_dir,'minst.pkl')
 
 train_num = 60000
 test_num = 10000
