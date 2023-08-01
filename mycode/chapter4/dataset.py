@@ -99,6 +99,3 @@ def load_mnist(normalize = True,flatten = True ,one_hot = False):
 
     return dataset['train_img'],dataset['train_label'],dataset['test_img'],dataset['test_label']
 
-x_train,t_train,x_test,t_test = load_mnist(normalize=True,flatten=True,one_hot=True)
-
-print(x_train.shape)

@@ -48,9 +48,3 @@ def softmax_loss(x,t):
     y = softmax(x)
     return cross_entropy_error(y,t)
 
-x = np.array([[0.3,2.9,4.0],[2.9,0.3,4.0]])
-print(softmax(x))
-t = np.array([0,0,1,0,0,0,0,0,0,0])
-y = np.array([0.1,0.05,0.6,0.0,0.05,0.1,0.0,0.1,0.0,0.0])
-y2 = np.array([0.6,0.05,0.1,0.0,0.05,0.1,0.0,0.1,0.0,0.0])
-print(cross_entropy_error(y,t),cross_entropy_error(y2,t))

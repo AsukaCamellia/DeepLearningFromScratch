@@ -104,3 +104,12 @@ if __name__ == '__main__':
             train_acc_list.append(train_acc)
             test_acc_list.append(test_acc)
             print('train_acc  test_acc',train_acc,test_acc)
+        
+    x = np.arange(epoch)
+    plt.plot(x,train_acc_list,label = 'train_acc',linestyle = '--')
+    plt.plot(x,test_acc_list,label = 'test_acc')
+    plt.xlabel('epochs')
+    plt.ylabel('acc')
+    plt.ylim(0,1.0)
+    plt.legend(loc = 'lower right')
+    plt.show()
