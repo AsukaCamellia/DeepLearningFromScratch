@@ -74,7 +74,7 @@ if __name__ == '__main__':
     x_train,t_train,x_test,t_test = load_mnist(normalize=True,flatten=True,one_hot=True)
 
     train_size = x_train.shape[0]
-    batch_size = 100
+    batch_size = 50
 
     train_loss_list = []
     train_acc_list = []
