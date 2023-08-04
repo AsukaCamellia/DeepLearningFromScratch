@@ -3,6 +3,7 @@ import sys, os
 #sys.path.append(os.pardir)  # 为了导入父目录中的文件而进行的设定
 current_path = os.path.abspath(__file__)
 parent_path = os.path.abspath(os.path.dirname(current_path))
+sys.path.append(parent_path)
 print(os.getcwd())
 import numpy as np
 from common.functions import softmax, cross_entropy_error
